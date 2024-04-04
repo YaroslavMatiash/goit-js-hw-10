@@ -20,6 +20,15 @@ function showToast(message) {
   });
 }
 
+// Функція для показу повідомлення про закінчення таймеру
+function showToastInfo(message) {
+  iziToast.info({
+    title: 'Info',
+    message: message,
+    position: 'topRight',
+  });
+}
+
 // Функція для валідації дати та активації кнопки Start
 function validateDate() {
   const selectedDate = new Date(datePicker.value);
@@ -63,7 +72,7 @@ function startTimer() {
       hoursElem.textContent = '00';
       minutesElem.textContent = '00';
       secondsElem.textContent = '00';
-      showToast('Timer has ended');
+      showToastInfo('Timer has ended');
       datePicker.disabled = false;
       startBtn.disabled = false;
     } else {
