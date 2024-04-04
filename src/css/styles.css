@@ -5,3 +5,194 @@
   |============================
 */
 @import url('./reset.css');
+
+.nav {
+  margin-bottom: 36px;
+}
+
+/* Timer */
+
+.timer-input {
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+
+  width: 272px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 16px;
+  margin-left: 40px;
+
+  border-radius: 4px;
+  border: 1px solid #808080;
+  background: #fff;
+}
+
+.timer-input:hover .calendar-input:focus {
+  border: 1px solid #000;
+}
+
+.timer-input:active {
+  color: #000;
+  border: 1px solid #4e75ff;
+}
+
+.timer-input:disabled {
+  color: #808080;
+  background: #fafafa;
+  border: 1px solid #808080;
+}
+
+.start-btn {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+
+  border-radius: 8px;
+  background: #4e75ff;
+  border: none;
+
+  width: 75px;
+  padding: 8px 16px;
+  margin-left: 8px;
+}
+
+.start-btn:hover {
+  background: #6c8cff;
+}
+
+.start-btn:disabled {
+  color: #989898;
+  background: #cfcfcf;
+  cursor: not-allowed;
+}
+
+.timer {
+  display: flex;
+  gap: 40px;
+
+  margin-top: 32px;
+  margin-left: 40px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.value {
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+}
+
+.label {
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+/* Snackbar */
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+
+  margin-left: 40px;
+}
+
+.snackbar-input {
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  margin-top: 8px;
+  margin-bottom: 30px;
+
+  border-radius: 4px;
+  border: 1px solid #808080;
+}
+
+.snackbar-input:hover {
+  border: 1px solid #000;
+}
+
+.snackbar-fieldset {
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+
+  width: 335px;
+  height: 64px;
+
+  border-radius: 4px;
+  border: 1px solid #808080;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+
+  margin-bottom: 32px;
+  margin-left: 40px;
+}
+
+.snackbar-label {
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 1.5;
+
+  margin-top: 16px;
+  margin-left: 0;
+}
+
+.create-btn {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+
+  display: flex;
+  width: 360px;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  border-radius: 8px;
+  background: #4e75ff;
+  border: none;
+
+  margin-left: 40px;
+}
+
+.create-btn:hover {
+  background: #6c8cff;
+}
