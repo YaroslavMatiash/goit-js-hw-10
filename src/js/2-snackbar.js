@@ -6,8 +6,8 @@ const snackbarForm = document.querySelector('.form');
 snackbarForm.addEventListener('submit', function (event) {
   event.preventDefault();
 
-  const delay = parseInt(this.elements['delay'].value);
-  const state = this.elements['state'].value;
+  const delay = parseInt(snackbarForm.elements['delay'].value);
+  const state = snackbarForm.elements['state'].value;
 
   const myPromise = new Promise((resolve, reject) => {
     if (state === 'fulfilled') {
